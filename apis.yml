@@ -1,7 +1,29 @@
 aid: dare-drop
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dare-drop.png
 name: Dare Drop
-description: Dare Drop is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Dare Drop is a gaming influencer marketing platform that connects game
+  publishers and brands with content creators across Twitch, YouTube, and
+  TikTok. The platform runs reward-driven "Dares" — challenges that incentivize
+  streamers and creators to produce longer, more engaging content around a
+  title, while automating creator targeting, campaign management, and reporting.
+  Dare Drop offers influencer campaigns, ongoing influencer programs, and organic
+  outreach, and has facilitated over 18,000 publisher Dares and distributed more
+  than 30,000 rewards to creator communities. Its customers include game studios
+  and publishers such as EA, Respawn, Raw Fury, Tencent, Obsidian, and Gearbox.
+  Surfaced as an a16z portfolio company and profiled in the API Evangelist
+  network; no public developer API surface has been found to date.
 url: https://raw.githubusercontent.com/api-evangelist/dare-drop/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,40 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Gaming
+- Influencer Marketing
+- Content Creators
+- Streaming
+- Twitch
+- YouTube
+- TikTok
+- Marketing
 apis: []
+common:
+- type: DomainSecurity
+  url: security/dare-drop-domain-security.yml
+- type: Website
+  url: https://daredrop.com
+- type: SignUp
+  url: https://daredrop.com/redirect
+- type: Blog
+  url: https://daredrop.com/blog
+- type: TermsOfService
+  url: https://daredrop.com/terms
+- type: PrivacyPolicy
+  url: https://daredrop.com/privacy-policy
+- type: Support
+  url: https://discord.gg/x9ABQ8qcjS
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
